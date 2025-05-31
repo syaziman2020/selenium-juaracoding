@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,6 +104,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite_Test_Web_eCommerce" title="com.juaracoding.selenium.drag_and_drop.testCases.DragAndDropTest" class="method navigator-link" hash-for-method="dragAndDropTest">dragAndDropTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite_Test_Web_eCommerce" title="com.juaracoding.selenium.drag_and_drop.testCases.DragAndDropTest" class="method navigator-link" hash-for-method="dragAndDropToBeginning">dragAndDropToBeginning</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite_Test_Web_eCommerce -->
@@ -131,6 +136,13 @@
                   <span class="method-name">dragAndDropTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dragAndDropToBeginning">
+                  </a> <!-- dragAndDropToBeginning -->
+                  <span class="method-name">dragAndDropToBeginning</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite_Test_Web_eCommerce-class-passed -->
         </div> <!-- panel Suite_Test_Web_eCommerce -->
@@ -143,6 +155,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite Test Web eCommerce&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.juaracoding.selenium.listeners.HookSS&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Drag And Drop Test&quot;&gt;
     &lt;parameter name=&quot;url&quot; value=&quot;http://www.dhtmlgoodies.com/packages/dhtml-suite-for-applications/demos/demo-drag-drop-3.html&quot;/&gt;
     &lt;classes&gt;
@@ -186,16 +201,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'dragAndDropTest')
 data.setCell(0, 2, 'com.juaracoding.selenium.drag_and_drop.testCases.DragAndDropTest')
-data.setCell(0, 3, 8020);
+data.setCell(0, 3, 3100);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'dragAndDropToBeginning')
+data.setCell(1, 2, 'com.juaracoding.selenium.drag_and_drop.testCases.DragAndDropTest')
+data.setCell(1, 3, 2263);
 window.suiteTableData['Suite_Test_Web_eCommerce']= { tableData: data, tableDiv: 'times-div-Suite_Test_Web_eCommerce'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Suite_Test_Web_eCommerce">
               </div> <!-- times-div-Suite_Test_Web_eCommerce -->
             </div> <!-- times-div -->
@@ -206,6 +225,24 @@ return data;
             <span class="header-content">Reporter output for Suite Test Web eCommerce</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">dragAndDropToBeginning</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='D:\eclipse-workspace\selenium/screenshots/dragAndDropToBeginning_before.png' target='_blank'>Screnshoot</a></span>
+                <span class="reporter-method-output"><br /><img src='D:\eclipse-workspace\selenium/screenshots/dragAndDropToBeginning_before.png' style='width: 20vw;' /></span>
+                <span class="reporter-method-output"><a href='D:\eclipse-workspace\selenium/screenshots/dragAndDropToBeginning_after.png' target='_blank'>Screnshoot</a></span>
+                <span class="reporter-method-output"><br /><img src='D:\eclipse-workspace\selenium/screenshots/dragAndDropToBeginning_after.png' style='width: 20vw;' /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">dragAndDropTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='D:\eclipse-workspace\selenium/screenshots/dragAndDropTest_before.png' target='_blank'>Screnshoot</a></span>
+                <span class="reporter-method-output"><br /><img src='D:\eclipse-workspace\selenium/screenshots/dragAndDropTest_before.png' style='width: 20vw;' /></span>
+                <span class="reporter-method-output"><a href='D:\eclipse-workspace\selenium/screenshots/dragAndDropTest_after.png' target='_blank'>Screnshoot</a></span>
+                <span class="reporter-method-output"><br /><img src='D:\eclipse-workspace\selenium/screenshots/dragAndDropTest_after.png' style='width: 20vw;' /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite_Test_Web_eCommerce" class="panel">
@@ -223,16 +260,20 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.juaracoding.selenium.drag_and_drop.testCases.DragAndDropTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(http://www.dhtmlgoodies.com/packages/dhtml-suite-for-applications/demos/demo-drag-drop-3.html)</span>
+                <span class="method-name">setup(http://www.dhtmlgoodies.com/packages/dhtml-suite-for-applications/demos/demo-drag-drop-3.html, org.t...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">dragAndDropTest</span>
-                <span class="method-start">8169 ms</span>
+                <span class="method-start">9511 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">dragAndDropToBeginning</span>
+                <span class="method-start">12738 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16195 ms</span>
+                <span class="method-start">15136 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

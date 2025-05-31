@@ -7,7 +7,7 @@ import com.juaracoding.selenium.drag_and_drop.pages.DragDropPage;
 
 public class DragAndDropTest extends BaseClass{
 	
-	@Test
+	@Test(priority = 0)
 	public void dragAndDropTest() throws InterruptedException {
 		
 		DragDropPage page = new DragDropPage(driver);
@@ -16,12 +16,17 @@ public class DragAndDropTest extends BaseClass{
 			page.dropAction(pairs[0], pairs[1]);
 		}
 		
-		Thread.sleep(3000);
+		Assert.assertTrue(page.statusGreen());
+	}
+	@Test(priority = 1)
+	public void dragAndDropToBeginning() {
 		
-		System.out.println("masuk pak eko");
+		DragDropPage page = new DragDropPage(driver);
+		
 		for(String[] pairs:keyElements) {
 			page.dropToBeginning(pairs[0]);
 		}
+		
 		
 		Assert.assertEquals(page.getSizeDragBeginning(), 7);
 	}

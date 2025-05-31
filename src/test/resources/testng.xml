@@ -14,6 +14,10 @@
       <class name="com.juaracoding.selenium.authentications.SignInTest" />
     </classes>
   </test> -->
+  <listeners>
+    <listener class-name="com.juaracoding.selenium.listeners.HookSS"></listener>
+  </listeners>
+  
   <test name="Drag And Drop Test">
     <parameter name="url" value="http://www.dhtmlgoodies.com/packages/dhtml-suite-for-applications/demos/demo-drag-drop-3.html"></parameter>
     <classes>

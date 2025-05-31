@@ -73,5 +73,18 @@ public class DragDropPage extends BasePage {
 	public int getSizeDragBeginning() {
 		return dragElements.size();
 	}
+	
+	public boolean statusGreen() {
+		int helperCount = 0;
+		for(WebElement drag:dragAfterElements) {
+			
+			System.out.println("color: "+drag.getCssValue("background-color"));
+			if(drag.getCssValue("background-color").equals("rgba(0, 255, 0, 1)")) {
+				helperCount++;
+			}
+			
+		}
+		return (helperCount >= dragAfterElements.size());
+	}
 
 }
